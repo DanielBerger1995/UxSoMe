@@ -55,7 +55,7 @@
 }
 .playlist {
     margin: 0 30px;
-    height: 500px;
+    height: 490px;
     overflow: scroll;
 }
 .playlist::-webkit-scrollbar {
