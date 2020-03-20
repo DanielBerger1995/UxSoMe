@@ -9,17 +9,7 @@
 
 }
 
-.main2{
-    width: 768px;
-    height: 1195px;
-    position: relative;
-    background: -moz-linear-gradient(-95deg,  #0A101A 0%, #394354 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#0A101A),  color-stop(100%,#394354));
-    text-align: center;
-    overflow: hidden;
-     font-family: 'Source Sans Pro', sans-serif;
-    z-index: 1;
-}
+
 .blogo {
   width: 260px;
     position: absolute;
