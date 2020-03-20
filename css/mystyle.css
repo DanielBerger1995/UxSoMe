@@ -9,7 +9,7 @@
 
 .main2 {
     width: 768px;
-
+padding-bottom: 60px;
     position: relative;
     background: -moz-linear-gradient(-95deg, #0A101A 0%, #394354 100%);
     /* FF3.6+ */

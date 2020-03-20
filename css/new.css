@@ -187,6 +187,7 @@ cursor: pointer;
 }
 
 .pbtn {
+    outline: none;
     margin-top: 280px;
     position: relative;
 color: #f1f1f1;
@@ -201,6 +202,7 @@ color: #f1f1f1;
 }
 
 .pbtn input[type=text] {
+
     border: none;
     background: none;
     color: #f1f1f1;
@@ -253,6 +255,7 @@ color: #f1f1f1;
 }
 .rbtn {
     position: relative;
+    outline: none;
 color: #f1f1f1;
     border: 4px solid #DF616F;
     background: #DF616F;
@@ -262,4 +265,5 @@ color: #f1f1f1;
     border-radius: 61px;
     padding: 7px 33px
         7px 33px;
+
 }
