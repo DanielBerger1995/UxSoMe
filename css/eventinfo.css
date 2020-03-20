@@ -1,5 +1,5 @@
 
-#map { position:absolute;  bottom:0; width:708px; height: 550px; margin: 30px;}
+#map { position:absolute;  top: 45%; bottom:0; width:708px; height: 550px; margin: 30px;}
 
 .rbtn {
     margin-top: 10px;
