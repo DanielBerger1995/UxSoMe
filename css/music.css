@@ -1,0 +1,135 @@
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+
+.playingnow {
+    text-align: left;
+    margin: 15px 50px 15px 50px;
+    display: flex;
+}
+.albumimg {
+    width: 185px;
+    height: 185px;
+    border-radius: 15px;
+    overflow: hidden;
+
+
+}
+
+.albumimg img {
+    margin-left: -35px;
+    width: auto;
+    height: 185px;
+}
+
+.albumtxt {
+    margin-top: 10px;
+    margin-left: 10px;
+
+}
+.songtitle {
+    font-size: 35px;
+    color: #f1f1f1;
+    font-weight: 700;
+}
+.artistname {
+    font-size: 25px;
+    color: #f1f1f1;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.playnxt {
+    margin-left: 50px;
+    text-align: left;
+    font-size: 35px;
+    color: #f1f1f1;
+    font-weight: 700;
+}
+.playlist {
+    margin: 0 30px;
+    height: 500px;
+    overflow: scroll;
+}
+.playlist::-webkit-scrollbar {
+  display: none;
+}
+.playlistborder {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    margin: 10px 0;
+    position: relative;
+color: #f1f1f1;
+    border: 1px solid #F1f1f1;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+
+    border-radius: 61px;
+    padding: 7px 3px
+        7px 20px;
+}
+.playlistborder1 {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+
+    position: relative;
+color: #f1f1f1;
+    border: none;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 25px;
+
+    border-radius: 61px;
+    padding: 7px 3px
+        7px 20px;
+}
+.playlistitem {
+    width: 234px;
+
+}
+.playlistitem:nth-child(1) {
+    margin-right: 60px;
+
+}
+
+.pbtn {
+
+    bottom: 10px;
+text-align: left;
+    left: 50%;
+    transform: translate(-50%, -50%);
+width: 708px;
+    position: absolute;
+color: #f1f1f1;
+    border: 4px solid #f1f1f1;
+    background: transparent;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    border-radius: 61px;
+    padding: 10px 33px
+        10px 83px;
+}
+
+.pbtn input[type=text] {
+    border: none;
+    background: none;
+    color: #f1f1f1;
+    font-size: 35px;
+    outline: none;
+  }
+.addbtn {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en_GB">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/basics.css">
+	<link rel="stylesheet" href="../css/music.css">
+	<link rel="icon" type="image/x-icon" href=""/>
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <img onclick="goBack()" src="../images/backbutton.png" alt="back button" class="backbutton">
+        <a href="../subpages/index.html"><img class="logo" src="../images/logo.png" alt="logo"></a>
+        <div class="infobtn" id="infoBtn"><img src="../images/info.png" alt="" class="info"></div>
+        <div class="infobox" id="infoBox">
+
+    <div class="infowrapper" id="infowrp"><div class="infoheader">INFO</div>
+           <div class="infotxt">Welcome to JUKEBOX, want to hear
+something specific?
+Add it to the playlist, to hear your favourite songs!
+</div></div>
+
+        </div>
+        <h1>JUKE <span>BOX</span></h1>
+
+<section class="playingnow">
+<div class="albumimg"><img src="../images/albumimg.jpg" alt="" class=""></div>
+
+<div class="albumtxt">
+    <div class="songtitle">Free yourself</div>
+    <div class="artistname">Leroy Jenkins</div>
+    <img src="../images/musicbar.png" alt="">
+</div>
+
+
+</section>
+<div class="playnxt">Playing next:</div>
+
+<section class="playlist">
+     <div class="playlistborder1">
+<div class="playlistitem">Title</div>
+    <div class="playlistitem">Artist</div>
+    <div class="playlistitem">Duration</div>
+</div>
+    <div class="playlistborder">
+    <div class="playlistitem">Fallin' in love</div>
+    <div class="playlistitem">Elvis</div>
+    <div class="playlistitem">3:45</div>
+    </div>
+    <div class="playlistborder"><div class="playlistitem">How do you feel</div>
+    <div class="playlistitem">Bob Dylan</div>
+    <div class="playlistitem">4:48</div>
+    </div>
+<div class="playlistborder"><div class="playlistitem">Fallin' in love</div>
+    <div class="playlistitem">Elvis</div>
+    <div class="playlistitem">3:45</div>
+    </div>
+<div class="playlistborder"><div class="playlistitem">Fallin' in love</div>
+    <div class="playlistitem">Elvis</div>
+    <div class="playlistitem">3:45</div>
+    </div>
+<div class="playlistborder"><div class="playlistitem">Fallin' in love</div>
+    <div class="playlistitem">Elvis</div>
+    <div class="playlistitem">3:45</div>
+    </div>
+<div class="playlistborder"><div class="playlistitem">Fallin' in love</div>
+    <div class="playlistitem">Elvis</div>
+    <div class="playlistitem">3:45</div>
+    </div><div class="playlistborder"><div class="playlistitem">Fallin' in love</div>
+    <div class="playlistitem">Elvis</div>
+    <div class="playlistitem">3:45</div>
+    </div><div class="playlistborder"><div class="playlistitem">Fallin' in love</div>
+    <div class="playlistitem">Elvis</div>
+    <div class="playlistitem">3:45</div>
+    </div>
+    <div class="playlistborder"><div class="playlistitem">Fallin' in love</div>
+    <div class="playlistitem">Elvis</div>
+    <div class="playlistitem">3:45</div>
+    </div><div class="playlistborder"><div class="playlistitem">Fallin' in love</div>
+    <div class="playlistitem">Elvis</div>
+    <div class="playlistitem">3:45</div>
+    </div><div class="playlistborder"><div class="playlistitem">Fallin' in love</div>
+    <div class="playlistitem">Elvis</div>
+    <div class="playlistitem">3:45</div>
+    </div>
+    <div class="playlistborder"><div class="playlistitem">Fallin' in love</div>
+    <div class="playlistitem">Elvis</div>
+    <div class="playlistitem">3:45</div>
+    </div><div class="playlistborder"><div class="playlistitem">Fallin' in love</div>
+    <div class="playlistitem">Elvis</div>
+    <div class="playlistitem">3:45</div>
+    </div><div class="playlistborder"><div class="playlistitem">Fallin' in love</div>
+    <div class="playlistitem">Elvis</div>
+    <div class="playlistitem">3:45</div>
+    </div>
+</section>
+
+
+ <button class="pbtn"><img src="../images/Group%20177.png" alt="" class="addbtn"><input type="text" placeholder="Add a song to the playlist.." class="searchbtn"></button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+</body>
+       <script>
+    $(function() {
+
+ $("#infoBox").hide();
+
+ $("#infowrp").hide();
+        $('#infoBtn').on('click', function(){
+            $('#infoBox').animate({width: 'toggle'});
+            $('#infowrp').animate({opacity: 'toggle'},"fast");
+
+        });
+        $('#infoBox').on('click', function(){
+            $('#infoBox').animate({width: 'toggle'});
+            $('#infowrp').animate({opacity: 'toggle'},"fast");
+        });
+
+
+    });
+    </script>
+    <script>
+function goBack() {
+  window.history.back()
+}
+</script>
+
+</html>

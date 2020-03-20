@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/new.css">
+  <style>
+
+  </style>
+</head>
+<body>
+<main>
+ <a href="../subpages/index.html"><img src="../images/backbutton.png" alt="back button" class="backbutton"></a>
+        <a href="../subpages/index.html"><img class="logo" src="../images/logo.png" alt="logo"></a>
+
+        <div class="readmore">Click the screen to see more details!</div>
+
+<div id="img" class="carousel slide" data-ride="carousel">
+
+
+  <div class="carousel-inner Slide">
+    <div class="carousel-item active Slide">
+     <a href="../subpages/eventinfo.html"> <img src="../images/openimic.png" alt="Los Angeles" ></a>
+
+    </div>
+    <div class="carousel-item Slide">
+      <img src="../images/football.png" alt="Chicago">
+    </div>
+    <div class="carousel-item Slide">
+      <img src="../images/trivia.png" alt="New York">
+    </div>
+  </div>
+
+
+  <a class="carousel-control-prev" href="#img" data-slide="prev">
+    <div class="arrowL"></div>
+  </a>
+  <a class="carousel-control-next" href="#img" data-slide="next">
+    <div class="arrowR"></div>
+  </a>
+</div>
+
+
+<div class="arrow-down" id="arrowD"></div>
+
+<div class="events" id="events">
+</div>
+
+<section class="scndhalf">
+          <div class="infobtn" id="infoBtn"><img src="../images/info.png" alt="" class="info"></div>
+        <div class="infobox" id="infoBox">
+
+    <div class="infowrapper" id="infowrp"><div class="infoheader">INFO</div>
+           <div class="infotxt">Welcome to JUKEBOX, want to hear
+something specific?
+Add it to the playlist, to hear your favourite songs!
+</div></div>
+
+        </div>
+        <div class="header" id="header">Vote for upcoming Events</div>
+        <button class="pbtn"><img src="../images/Group%20177.png" alt="" class="addbtn"><input type="text" placeholder="Suggest your own event.." class="searchbtn"></button>
+       <section class="votebox">
+    <div class="box one"><img src="../images/trivianigght.png" alt="" class="eventimg"> <img src="../images/heart.png" alt="" class="heart"><div class="no">38</div></div>
+    <div class="box two"><img src="../images/openmicc.png" alt="" class="eventimg"><img src="../images/heart.png" alt="" class="heart"><div class="no">12</div></div>
+    <div class="box three"><img src="../images/beerpong.png" alt="" class="eventimg"><img src="../images/heart.png" alt="" class="heart"><div class="no">26</div></div>
+    <div class="box four"><img src="../images/movie%20night.png" alt="" class="eventimg"><img src="../images/heart.png" alt="" class="heart"><div class="no">19</div></div>
+</section>
+
+<button class="rbtn">Hold your own private event</button>
+</section>
+
+
+
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script>
+    $(function() {
+
+ $("#infoBox").hide();
+
+ $("#infowrp").hide();
+        $('#infoBtn').on('click', function(){
+            $('#infoBox').animate({width: 'toggle'});
+            $('#infowrp').animate({opacity: 'toggle'},"fast");
+             $('#header').animate({opacity: 'toggle'},"fast");
+
+        });
+        $('#infoBox').on('click', function(){
+            $('#infoBox').animate({width: 'toggle'});
+            $('#infowrp').animate({opacity: 'toggle'},"fast");
+            $('#header').animate({opacity: 'toggle'},"fast");
+        });
+
+
+
+
+
+           $("#arrowD").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#events").offset().top},
+        'slow');
+});
+
+
+   });
+
+    </script>
+</body>
+
+
+
+
+
+
+
+
+
+
+
+</html>

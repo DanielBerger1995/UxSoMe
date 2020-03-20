@@ -1,0 +1,131 @@
+
+
+.blogo {
+  width: 260px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+.cls-4 {
+    animation: light 0.8s 2.2s ease-in-out;
+
+}
+.cls-3 {
+    animation: light2 0.8s 2.8s ease-in-out;
+}
+.cls-2 {
+    animation: light3 0.8s 3.4s ease-in-out;
+
+}
+
+
+@keyframes light {
+
+    50% {fill: aqua};
+}
+
+@keyframes light2 {
+
+    50% {fill: #ff0000};
+}
+
+@keyframes light3 {
+
+    50% {fill: 	#7CFC00};
+}
+
+
+.menubtns{
+    position: absolute;
+    top: 60%;
+   width: 768px;
+    height: 354px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.txt  {
+    font-family: 'Source Sans Pro', sans-serif;
+     font-size: 50px;
+  font-weight: bold;
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.menubtns a {
+    text-decoration: none;
+   color: #0A101A;
+}
+.gamesbtn {
+    width: 384px;
+    height: 142px;
+    background:#65CCEF;
+    border-radius: 0 15px 15px 0;
+mix-blend-mode: screen;
+    position: relative;
+    transform: translateX(-384px);
+    animation: left 1s 0.4s  forwards;
+}
+
+.eventsbtn {
+    width: 384px;
+    height: 142px;
+    background:#9BF2CB;
+    border-radius: 15px 0 0 15px;
+    mix-blend-mode: screen;
+    position: relative;
+    transform: translateX(384px);
+    animation: right 1s  0.8s  forwards;
+}
+.musicbtn {
+    width: 384px;
+    height: 142px;
+    background:#DF616F;
+      border-radius: 0 15px 15px 0;
+    mix-blend-mode: screen;
+    position: relative;
+    transform: translateX(-384px);
+    animation: left 1s  1s  forwards;
+}
+.competitionsbtn {
+    width: 384px;
+    height: 142px;
+    background:#AF9BF2;
+    border-radius: 15px 0 0 15px;
+    mix-blend-mode: screen;
+    position: relative;
+    transform: translateX(384px);
+    animation: right 1s  1.2s  forwards;
+
+}
+
+@keyframes left {
+    0%{
+        transform: translateX(-364px);
+    }
+    60% {transform: translateX(0px);
+
+    }
+    100%{
+             transform: translateX(-20px);
+    }
+}
+
+@keyframes right {
+    0%{
+        transform: translateX(364px);
+    }
+     60% {transform: translateX(0px);}
+    100%{
+             transform: translateX(20px);
+    }
+}
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en_GB">
+
+<head>
+	<meta charset="utf-8">
+	<title>Example Title</title>
+	<meta name="author" content="Your Name">
+	<meta name="description" content="Example description">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../css/basics.css">
+	<link rel="stylesheet" href="../css/kahootlike.css">
+	<link rel="icon" type="image/x-icon" href=""/>
+
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <img onclick="goBack()" src="../images/backbutton.png" alt="back button" class="backbutton">
+        <a href="../subpages/index.html"><img class="logo" src="../images/logo.png" alt="logo"></a>
+        <!--<div class="infobtn" id="infoBtn"><img src="../images/info.png" alt="" class="info"></div>
+        <div class="infobox" id="infoBox">-->
+
+    <div class="infowrapper" id="infowrp"><div class="infoheader">INFO</div>
+           <div class="infotxt">Welcome to JUKEBOX, want to hear
+something specific?
+Add it to the playlist, to hear your favourite songs!
+</div></div>
+
+        </div>
+    <h1><span>KAHOOT</span>-LIKE</h1>
+
+<div class="grid_container">
+
+    <div class="fibbage">
+    <img src="../images/fibbage.png" class="game_image" alt="Fibbage">
+        </div>
+
+    <div class="fibbagebutton">
+        <p1>SELECT</p1>
+        </div>
+
+    <div class="kahoot">
+    <img src="../images/kahoot.png" class="game_image" alt="Kahoot">
+        </div>
+
+    <div class="kahootbutton">
+        <p1>SELECT</p1>
+        </div>
+
+<div class="quiplash">
+    <img src="../images/quiplash.png" class="game_image" alt="Quiplash">
+        </div>
+
+    <div class="quiplashbutton">
+        <p1>SELECT</p1>
+        </div>
+
+
+</div>
+
+    <button class="playnow">PLAY NOW</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+</body>
+       <script>
+    $(function() {
+
+ $("#infoBox").hide();
+
+ $("#infowrp").hide();
+        $('#infoBtn').on('click', function(){
+            $('#infoBox').animate({width: 'toggle'});
+            $('#infowrp').animate({opacity: 'toggle'},"fast");
+
+        });
+        $('#infoBox').on('click', function(){
+            $('#infoBox').animate({width: 'toggle'});
+            $('#infowrp').animate({opacity: 'toggle'},"fast");
+        });
+
+
+    });
+    </script>
+    <script>
+function goBack() {
+  window.history.back()
+}
+</script>
+<script>
+    $(".fibbagebutton").click(function () {
+   $(this).toggleClass("fibbagebuttonselected");
+});
+    $(".kahootbutton").click(function () {
+   $(this).toggleClass("kahootbuttonselected");
+});
+    $(".quiplashbutton").click(function () {
+   $(this).toggleClass("quiplashbuttonselected");
+});
+</script>
+
+</html>

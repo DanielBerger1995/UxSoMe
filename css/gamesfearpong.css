@@ -1,0 +1,118 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+
+}
+section{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    margin: 25px;
+}
+.number{
+    margin-left: 10%;
+    margin-right: 5%;
+    align-self: center;
+}
+p{
+    font-family: 'Source Sans Pro';
+    font-size: 25px;
+    color: #F1F1F1;
+    margin-right: 50px;
+}
+p2{
+    font-family: 'Source Sans Pro';
+    font-size: 25px;
+    color: #F1F1F1;
+    padding: 50px;
+}
+.whitespace{
+    height: 70px;
+}
+.grid_container{
+    display: grid;
+    grid-template-columns: 362px 362px;
+    grid-column-gap: 44px;
+    grid-row-gap: 44px;
+    margin-top: 50px;
+}
+.gameoptionleft{
+    transform: translateX(-384px);
+    width: 362px;
+    height: 325px;
+    border-bottom-right-radius: 5%;
+    border-top-right-radius: 5%;
+
+}
+.gameoptionright{
+    transform: translateX(384px);
+    width: 362px;
+    height: 325px;
+    border-bottom-left-radius: 5%;
+    border-top-left-radius: 5%;
+}
+.mixit{
+    background-color: #65CCEF;
+    animation: left 1s 0.4s  forwards;
+}
+.mixit_image{
+    margin: 20px 0 10px -20px;
+}
+.kahootlike{
+    background-color: #9BF2CB;
+    animation: right 1s  0.8s  forwards;
+}
+.kahootlike_image{
+    margin-top: 20px;
+    margin-bottom: 11px;
+}
+.fearpong{
+    background-color: #DF616F;
+    animation: left 1s  1s  forwards;
+}
+.fearpong_image{
+    margin: 20px 0 10px 0;
+}
+.boardgames{
+    background-color: #AF9BF2;
+    animation: right 1s  1.2s  forwards;
+}
+.boardgames_image{
+    margin: 20px 0 14px 0;
+}
+p3{
+    font-family: 'Source Sans Pro';
+    font-size: 40px;
+    color: #0A101A;
+    font-weight: bold;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+
+@keyframes left {
+    0%{
+        transform: translateX(-364px);
+    }
+    60% {transform: translateX(0px);
+
+    }
+    100%{
+             transform: translateX(-20px);
+    }
+}
+
+@keyframes right {
+    0%{
+        transform: translateX(364px);
+    }
+     60% {transform: translateX(0px);}
+    100%{
+             transform: translateX(20px);
+    }
+}
